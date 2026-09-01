@@ -24,3 +24,11 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Nature of Contribution**: Edit
 - **Human Review Status**: Reviewed and verified (change dictated by NAF)
 - **Git Hash**: 499377a
+
+## [2026-09-01 01:19 UTC]
+- **Tool**: Claude (Anthropic), claude-fable-5
+- **Session Purpose**: Fill the funding placeholders with the grant numbers from the acknowledgment in the August 2026 QST PSWS HF Receiver article (verified verbatim against the PDF, p. 33).
+- **Sections/Files Affected**: `CLAUDE.md` (Funder line), `.claude/rules/ai-governance.md` (project-specific expectations), `docs/project_description.md` (funding acknowledgment footer)
+- **Nature of Contribution**: Edit
+- **Human Review Status**: Reviewed and verified (source text extracted from the article PDF)
+- **Git Hash**: [fill in after committing]

@@ -155,3 +155,5 @@ An amateur radio license is helpful and the club (W3USR) will happily get you li
 ---
 
 *Project QPA (Quadrature Phased Array). Interested students should contact Dr. Frissell (nathaniel.frissell@scranton.edu).*
+
+*This project supports the HamSCI Personal Space Weather Station effort, funded by NSF grants AGS-2045755, AGS-2432821, AGS-2432822, AGS-2432824, AGS-2432823, AGS-2431666, and OPP-2332427; NASA grants 80NSSC23K1322, 80NSSC25K7026, and 80NSSC26K0051; and Frankford Radio Club and ARDC grants.*

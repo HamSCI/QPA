@@ -5,7 +5,7 @@ QPA (Quadrature Phased Array) is a two-semester EE/CE senior design capstone pro
 
 **PI**: Dr. Nathaniel A. Frissell, W2NAF, Department of Physics and Engineering, The University of Scranton
 **Collaborators**: HamSCI volunteer engineering community; The University of Scranton Amateur Radio Club (W3USR)
-**Funder**: Supports the NSF-funded HamSCI PSWS / DASI effort. [Capstone-specific funding and grant numbers to be confirmed by the PI.]
+**Funder**: Supports the HamSCI PSWS / DASI effort, funded by NSF grants AGS-2045755, AGS-2432821, AGS-2432822, AGS-2432824, AGS-2432823, AGS-2431666, and OPP-2332427; NASA grants 80NSSC23K1322, 80NSSC25K7026, and 80NSSC26K0051; and Frankford Radio Club and ARDC grants (per the acknowledgment in Frissell, *QST*, August 2026, p. 33).
 **Project period**: Two academic semesters (planned: Fall 2026 – Spring 2027)
 
 ## Project Goal
