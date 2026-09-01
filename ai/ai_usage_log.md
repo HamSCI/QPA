@@ -121,4 +121,4 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Nature of Contribution**: Edit. NAF identified the problem and specified the remedy; the assistant drafted the replacement wording.
 - **Human Review Status**: Reviewed and verified. NAF read the previous wording, named the objection, and set the direction; the replacement text is pending his read.
 - **Still pending, not in this commit**: the two drafts from the previous session remain unapplied, a section 2 paragraph stating the 129.6 MSPS full-rate assumption (awaiting confirmation of what the deployed PSWS stations run) and a new R11 for electrical safety, static and lightning protection, and FCC Part 15 emissions. The published artifact page (claude.ai/code/artifact/5f944165-223f-40b5-bf79-35c9e6f0760b) remains stale, now by this edit as well.
-- **Git Hash**: [pending]
+- **Git Hash**: 3cc9173
