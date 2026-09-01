@@ -97,7 +97,7 @@ These are the sponsor's initial targets. Refining them into a complete, testable
 | R6 | SigMonD client software performs calibrated complex-weight combining of paired ka9q-radio slices with operator-commanded steering |
 | R7 | Demonstrated null depth of at least 15 dB on a signal of known bearing (initial target) |
 | R8 | Outdoor-rated enclosures and antennas; continuous unattended operation for at least 72 hours |
-| R9 | Full documentation (schematics, board files, bill of materials, calibration procedure, software) released open source so HamSCI volunteers can replicate the design |
+| R9 | Full documentation (schematics, board files, bill of materials, calibration procedure, software) released open source so HamSCI volunteers can replicate the design: hardware designs under an appropriate open hardware license (such as the TAPR Open Hardware License), source code under the MIT license |
 | R10 | Ruggedized sufficiently for installation at SPA, MCM, and PLM (section 3), extending R8. The team is to obtain the governing environmental and station-support requirements from Dr. Frissell and derive testable values for at least: operating and survival temperature; wind loading and rime or ice accretion on the elements; dry-snow ingress, which defeats seals that pass a rain test; UV and mechanical durability of plastics, cable jackets, and radomes at low temperature; and installation and service by station personnel, working from the team's documentation alone |
 
 **On R10.** Do not guess these numbers. Each station is a different environment, and hardware built to these numbers will actually be installed there. **Ask Dr. Frissell for the governing values**; as Institutional PI for the Scranton subaward on OPP-2332427 he is the route to the OPP project team and to station support documentation. Where a value is unavailable in semester 1, record the gap explicitly in the requirements specification and mark what depends on it.
@@ -156,6 +156,7 @@ An amateur radio license is helpful and the club (W3USR) will happily get you li
 - Component and fabrication budget through the sponsor. [Amount to be confirmed.]
 - Mentorship from the sponsor and from HamSCI/TAPR volunteer engineers who designed the current PSWS hardware and software.
 - The open-source ka9q-radio and SigMonD codebases and their developer communities.
+- Claude Code accounts for each team member, for use in design analysis, software development, and documentation. AI use must follow University of Scranton academic integrity policy and the course instructor's rules, including disclosure of AI assistance in design reports.
 
 ## 11. References
 

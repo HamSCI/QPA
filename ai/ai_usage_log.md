@@ -80,3 +80,11 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Nature of Contribution**: Edit. Workshop dates and venue (April 17–18, 2027, at the University of Scranton) verified against https://hamsci.org/hamsci2027 before inclusion.
 - **Human Review Status**: Pending review
 - **Git Hash**: 571f1d4
+
+## [2026-09-01 12:26 UTC]
+- **Tool**: Claude (Anthropic), claude-fable-5
+- **Session Purpose**: Record two facts NAF stated: students will be given Claude Code accounts for the project, and releases will use an appropriate open hardware license (such as the TAPR Open Hardware License) for designs and the MIT license for source code.
+- **Sections/Files Affected**: `docs/project_description.md` (R9 names the licenses; Claude Code accounts added to Resources Provided with the AI-disclosure expectation); `.claude/rules/ai-governance.md` (student Claude Code accounts noted in project-specific expectations); `CLAUDE.md` (Licensing and Student AI use lines); published artifact page mirrored; `ai/ai_usage_log.md`.
+- **Nature of Contribution**: Edit. NAF wrote "TAPR-OHW"; recorded as the license's actual name, the TAPR Open Hardware License (OHL).
+- **Human Review Status**: Pending review
+- **Git Hash**: [fill in after committing]

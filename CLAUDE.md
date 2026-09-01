@@ -10,6 +10,9 @@ QPA (Quadrature Phased Array) is a two-semester EE/CE senior design capstone pro
 
 **NAF's role on OPP-2332427**: Institutional PI for the University of Scranton subaward to the New Jersey Institute of Technology (NJIT holds the award; Hyomin Kim is PI, Andrew J. Gerrard co-PI). This matters for QPA because the antennas developed here are destined for the U.S. Antarctic stations under that award as well as for DASI2 amateur sites, and NAF is the students' route to the Antarctic deployment requirements (requirement R10 in `docs/project_description.md`).
 
+**Licensing**: Hardware designs will be released under an appropriate open hardware license (such as the TAPR Open Hardware License); source code under the MIT license (this repository's `LICENSE`).
+**Student AI use**: Students will be given Claude Code accounts for this project. Their use is governed by `.claude/rules/ai-governance.md`, University of Scranton academic integrity policy, and the course instructor's rules.
+
 ## Project Goal
 Deliver a working, documented, and replicable dual-channel antenna array front end and beam-steering software demonstration for the PSWS HF Receiver: two orthogonal active elements, a GPSDO-disciplined frequency translator and combiner feeding the receiver's single RF input, and a ka9q-radio/SigMonD application that demonstrates measurable pattern steering (for example, a steerable null on a transmitter of known bearing).
 

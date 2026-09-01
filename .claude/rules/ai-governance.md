@@ -29,7 +29,7 @@ All AI-assisted work on this project must comply with the following policies. Vi
 
 ### 5. Project-Specific Expectations
 This is a University of Scranton EE/CE senior design capstone project conducted in support of the HamSCI Personal Space Weather Station (PSWS) / Distributed Array of Small Instruments (DASI) effort, funded by NSF grants AGS-2045755, AGS-2432821, AGS-2432822, AGS-2432824, AGS-2432823, AGS-2431666, and OPP-2332427; NASA grants 80NSSC23K1322, 80NSSC25K7026, and 80NSSC26K0051; and Frankford Radio Club and ARDC grants (per the acknowledgment in Frissell, *QST*, August 2026, p. 33). In addition to the standing policies above:
-- Student use of AI tools in capstone deliverables is governed by University of Scranton academic integrity policy and by the course instructor's rules; students must disclose AI assistance in their design reports per those rules.
+- Students will be provided Claude Code accounts for this project. Student use of AI tools in capstone deliverables is governed by University of Scranton academic integrity policy and by the course instructor's rules; students must disclose AI assistance in their design reports per those rules.
 - Work products intended for release to the HamSCI community follow the HamSCI Generative AI Use Agreement.
 
 ## AI Usage Logging Requirements
