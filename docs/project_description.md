@@ -118,7 +118,8 @@ These are the sponsor's initial targets. Refining them into a complete, testable
 - Calibration campaign; verify inter-channel stability against R5.
 - Steering demonstrations: pattern rotation, null placement, and bearing estimation against transmitters of known location (WWV at 5/10/15 MHz, CHU, local AM broadcast stations), compared with great-circle bearings.
 - 72-hour soak test under SigMonD service management.
-- **Milestones:** integration readiness review, final demonstration, final report and poster, open-source release to the HamSCI GitHub organization.
+- Present the project at the [2027 HamSCI Workshop](https://hamsci.org/hamsci2027), April 17–18, 2027, at the University of Scranton.
+- **Milestones:** integration readiness review, final demonstration, HamSCI Workshop presentation (April 17–18), final report and poster, open-source release to the HamSCI GitHub organization.
 
 ## 7. Deliverables
 
@@ -129,6 +130,7 @@ These are the sponsor's initial targets. Refining them into a complete, testable
 5. Test and calibration report with measured patterns, null depths, and bearing accuracy.
 6. Final capstone report, poster, and public demonstration.
 7. Replication documentation for the HamSCI community.
+8. A presentation of the project at the [2027 HamSCI Workshop](https://hamsci.org/hamsci2027) (April 17–18, 2027, at the University of Scranton). This is an expectation of the project, and puts the team's work in front of the scientists and volunteer engineers who will deploy it.
 
 ## 8. What You Will Learn
 
@@ -137,7 +139,7 @@ This project spans the full arc of a real instrument development effort inside a
 - **RF/analog:** antenna theory, low-noise active antennas, mixers and phase-locked oscillators, filter design, frequency planning, RF cascade analysis, PCB layout;
 - **Digital/software:** software-defined radio, digital beamforming and array calibration, Linux services, multicast networking, Python/C development in the ka9q-radio/SigMonD ecosystems;
 - **Systems engineering:** requirements definition, trade studies, design reviews, integration, verification against a specification;
-- **Professional practice:** open-source collaboration with an international volunteer engineering community, and the chance to see your hardware design replicated at stations around the world. Strong results are candidates for presentation at the HamSCI Workshop and publication in venues such as *QST*.
+- **Professional practice:** open-source collaboration with an international volunteer engineering community, and the chance to see your hardware design replicated at stations around the world. The team will present its work at the 2027 HamSCI Workshop, hosted at the University of Scranton (deliverable 8), and strong results are candidates for publication in venues such as *QST*.
 
 An amateur radio license is helpful and the club (W3USR) will happily get you licensed, but the project is receive-only, so a license is optional.
 

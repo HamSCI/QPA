@@ -72,3 +72,11 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Nature of Contribution**: Draft (technical explanation of MRC, its relation to the QPA weight policies, the HF polarization-diversity payoff and decode-count metric, and options recorded for a later decision; Brennan 1959 citation verified by web search before inclusion)
 - **Human Review Status**: Pending review
 - **Git Hash**: f2fbeb1
+
+## [2026-09-01 12:23 UTC]
+- **Tool**: Claude (Anthropic), claude-fable-5
+- **Session Purpose**: Record NAF's expectation that the capstone students present their work at the 2027 HamSCI Workshop, in the project description and the published page.
+- **Sections/Files Affected**: `docs/project_description.md` (semester 2 plan and milestones, new deliverable 8, professional-practice bullet reworded from "candidates for presentation" to the stated expectation); published artifact page mirrored; `ai/ai_usage_log.md`.
+- **Nature of Contribution**: Edit. Workshop dates and venue (April 17–18, 2027, at the University of Scranton) verified against https://hamsci.org/hamsci2027 before inclusion.
+- **Human Review Status**: Pending review
+- **Git Hash**: [fill in after committing]
