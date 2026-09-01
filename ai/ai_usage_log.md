@@ -56,3 +56,11 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Verification**: The previous entry declined to assert NAF's relationship to OPP-2332427, because the NSF award record he supplied names NJIT as recipient with Hyomin Kim as PI and lists no one from Scranton. That gap is now filled by NAF's own statement of his role, and the text distinguishes the two facts: NJIT holds the award, and Scranton holds a subaward on which NAF is Institutional PI. Nothing in the award record is contradicted, since a subaward would not appear on the prime award's public record.
 - **Note**: this makes the project sponsor and the requirements source the same person, which is worth stating plainly to students who would otherwise assume an external gatekeeper stands between them and the values they need for R10.
 - **Git Hash**: 587fd00
+
+## [2026-09-01 01:49 UTC]
+- **Tool**: Claude (Anthropic), claude-fable-5
+- **Session Purpose**: Sync the published student-facing artifact page with `docs/project_description.md` after the parallel session added the deployment targets (DASI2 amateur sites; SPA, MCM, PLM under NSF OPP-2332427) and requirement R10; no repository document content changed in this session.
+- **Sections/Files Affected**: Published artifact page (claude.ai/code/artifact/5f944165-223f-40b5-bf79-35c9e6f0760b) mirroring `docs/project_description.md`; `ai/ai_usage_log.md` (this entry).
+- **Nature of Contribution**: Edit (porting repo document content to the published page verbatim)
+- **Human Review Status**: Pending review
+- **Git Hash**: [fill in after committing]
