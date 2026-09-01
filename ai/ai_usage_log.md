@@ -64,3 +64,11 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Nature of Contribution**: Edit (porting repo document content to the published page verbatim)
 - **Human Review Status**: Pending review
 - **Git Hash**: 2e793a0
+
+## [2026-09-01 01:54 UTC]
+- **Tool**: Claude (Anthropic), claude-fable-5
+- **Session Purpose**: Write up KA9Q's maximal-ratio combining suggestion as a session note for the student team, per NAF: *"Can you write that up as a note? I don't think it should be part of the main project description."* The main project description is unchanged.
+- **Sections/Files Affected**: `notes/2026-09-01_maximal_ratio_combining.md` (new)
+- **Nature of Contribution**: Draft (technical explanation of MRC, its relation to the QPA weight policies, the HF polarization-diversity payoff and decode-count metric, and options recorded for a later decision; Brennan 1959 citation verified by web search before inclusion)
+- **Human Review Status**: Pending review
+- **Git Hash**: [fill in after committing]
