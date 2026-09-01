@@ -95,4 +95,4 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Sections/Files Affected**: `docs/project_description.md` (new "Success tiers" subsection in section 5 with threshold/objective/stretch tiers; career paragraph in section 8; grant-funded lead-in to section 10); published artifact page mirrored; `ai/ai_usage_log.md`.
 - **Nature of Contribution**: Draft. Tier contents map to existing requirements only (threshold = R1–R6 at prototype level, objective adds R7–R9, stretch = R10 qualification); no new technical claims or numbers introduced.
 - **Human Review Status**: Pending review
-- **Git Hash**: [fill in after committing]
+- **Git Hash**: 41b4da5
