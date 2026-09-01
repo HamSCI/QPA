@@ -96,3 +96,11 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Nature of Contribution**: Draft. Tier contents map to existing requirements only (threshold = R1–R6 at prototype level, objective adds R7–R9, stretch = R10 qualification); no new technical claims or numbers introduced.
 - **Human Review Status**: Pending review
 - **Git Hash**: 41b4da5
+
+## [2026-09-01 12:34 UTC]
+- **Tool**: Claude (Anthropic), claude-fable-5
+- **Session Purpose**: Add NAF's team-expansion guidance to the description. His words: *"While capstone students are expected to carry the majority of project and management, capstone students are encouraged to expand their team as needed and appropriate, including TAPR/HamSCI community (who have very significant industry and scientific experience), and underclassmen."*
+- **Sections/Files Affected**: `docs/project_description.md` (new "Expanding the team" paragraph in section 9); published artifact page mirrored; `ai/ai_usage_log.md`.
+- **Nature of Contribution**: Edit (light grammatical smoothing of NAF's dictated text; all qualifiers preserved)
+- **Human Review Status**: Pending review
+- **Git Hash**: [fill in after committing]

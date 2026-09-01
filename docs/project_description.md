@@ -161,6 +161,8 @@ An amateur radio license is helpful and the club (W3USR) will happily get you li
 - **Software/DSP lead (CE or EE):** ka9q-radio/SigMonD integration, combining and steering algorithms, calibration software, demonstration interface.
 - **Systems and test lead (EE or CE):** requirements, RF budget, test planning, calibration campaign, field measurements, documentation. In a two-person team, these duties are shared across the other two roles.
 
+**Expanding the team.** Capstone students are expected to carry the majority of the project work and its management. Within that, the team is encouraged to expand as needed and appropriate: members of the TAPR/HamSCI community, who have very significant industry and scientific experience, and underclassmen.
+
 ## 10. Resources Provided
 
 This project is grant funded. Significant resources are available to help students, beyond what is normally available to capstone projects:
