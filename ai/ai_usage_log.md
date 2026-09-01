@@ -31,4 +31,4 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Sections/Files Affected**: `CLAUDE.md` (Funder line), `.claude/rules/ai-governance.md` (project-specific expectations), `docs/project_description.md` (funding acknowledgment footer)
 - **Nature of Contribution**: Edit
 - **Human Review Status**: Reviewed and verified (source text extracted from the article PDF)
-- **Git Hash**: [fill in after committing]
+- **Git Hash**: 9d0fa93
