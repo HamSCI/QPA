@@ -151,3 +151,7 @@ An amateur radio license is helpful and the club (W3USR) will happily get you li
 2. HamSCI Personal Space Weather Station: https://hamsci.org/psws and https://www.psws.hamsci.org
 3. SigMonD, the HamSCI signal monitor daemon: https://github.com/HamSCI/sigmond
 4. ka9q-radio, by Phil Karn, KA9Q: https://github.com/ka9q/ka9q-radio
+
+---
+
+*Project QPA (Quadrature Phased Array). Interested students should contact Dr. Frissell (nathaniel.frissell@scranton.edu).*

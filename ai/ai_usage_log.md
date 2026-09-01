@@ -1,4 +1,4 @@
-# AI Usage Log — QPA
+# AI Usage Log — QPA (Quadrature Phased Array)
 
 This log records all substantive AI-assisted sessions for the project
 "QPA: Two-Element Orthogonal Active Receive Array for the HamSCI PSWS HF Receiver".
@@ -16,3 +16,11 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Nature of Contribution**: Draft (project description synthesized from the August 2026 QST PSWS HF Receiver article, the HamSCI/sigmond repository, and NAF's stated architecture: 2 orthogonal active elements, 2 × 30 MHz coherent channels via GPSDO-locked frequency translation into the top half of the 0.1–60 MHz digitizer passband, ka9q-radio/SigMonD arbitrary-weight steering); repository scaffolding from `w2naf-academia/ai_project_template`.
 - **Human Review Status**: Pending review
 - **Git Hash**: f59fcd9
+
+## [2026-09-01 01:25 UTC]
+- **Tool**: Claude (Anthropic), claude-fable-5
+- **Session Purpose**: Expand the QPA acronym (Quadrature Phased Array), per NAF, everywhere the project short name appears.
+- **Sections/Files Affected**: `README.md`, `CLAUDE.md`, `docs/project_description.md` (added footer line), `ai/ai_usage_log.md`
+- **Nature of Contribution**: Edit
+- **Human Review Status**: Reviewed and verified (change dictated by NAF)
+- **Git Hash**: [fill in after committing]

@@ -1,4 +1,4 @@
-# QPA: Two-Element Orthogonal Active Receive Array for the HamSCI PSWS HF Receiver
+# QPA (Quadrature Phased Array): Two-Element Orthogonal Active Receive Array for the HamSCI PSWS HF Receiver
 
 A two-semester EE/CE senior design capstone project at The University of Scranton, sponsored by Dr. Nathaniel A. Frissell, W2NAF, in support of the [HamSCI](https://hamsci.org) Personal Space Weather Station (PSWS) HF Receiver.
 
