@@ -63,4 +63,4 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Sections/Files Affected**: Published artifact page (claude.ai/code/artifact/5f944165-223f-40b5-bf79-35c9e6f0760b) mirroring `docs/project_description.md`; `ai/ai_usage_log.md` (this entry).
 - **Nature of Contribution**: Edit (porting repo document content to the published page verbatim)
 - **Human Review Status**: Pending review
-- **Git Hash**: [fill in after committing]
+- **Git Hash**: 2e793a0
