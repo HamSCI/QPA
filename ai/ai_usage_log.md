@@ -103,4 +103,4 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Sections/Files Affected**: `docs/project_description.md` (new "Expanding the team" paragraph in section 9); published artifact page mirrored; `ai/ai_usage_log.md`.
 - **Nature of Contribution**: Edit (light grammatical smoothing of NAF's dictated text; all qualifiers preserved)
 - **Human Review Status**: Pending review
-- **Git Hash**: [fill in after committing]
+- **Git Hash**: c4ec91f
