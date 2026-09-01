@@ -79,4 +79,4 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Sections/Files Affected**: `docs/project_description.md` (semester 2 plan and milestones, new deliverable 8, professional-practice bullet reworded from "candidates for presentation" to the stated expectation); published artifact page mirrored; `ai/ai_usage_log.md`.
 - **Nature of Contribution**: Edit. Workshop dates and venue (April 17–18, 2027, at the University of Scranton) verified against https://hamsci.org/hamsci2027 before inclusion.
 - **Human Review Status**: Pending review
-- **Git Hash**: [fill in after committing]
+- **Git Hash**: 571f1d4
