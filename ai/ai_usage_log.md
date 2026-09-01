@@ -15,4 +15,4 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Sections/Files Affected**: `docs/project_description.md` (new), `CLAUDE.md` (new), `README.md` (new), `.claude/settings.json`, `.claude/commands/commit.md`, `.claude/rules/ai-governance.md`, `.claude/rules/latex-writing.md`, `.claude/rules/python-code.md` (new, from template), `ai/ai_usage_log.md` (new), `.gitignore` (appended OS/editor/LaTeX rules and `reference/` exclusion so the publisher-provided QST PDF is never committed).
 - **Nature of Contribution**: Draft (project description synthesized from the August 2026 QST PSWS HF Receiver article, the HamSCI/sigmond repository, and NAF's stated architecture: 2 orthogonal active elements, 2 × 30 MHz coherent channels via GPSDO-locked frequency translation into the top half of the 0.1–60 MHz digitizer passband, ka9q-radio/SigMonD arbitrary-weight steering); repository scaffolding from `w2naf-academia/ai_project_template`.
 - **Human Review Status**: Pending review
-- **Git Hash**: [fill in after committing]
+- **Git Hash**: f59fcd9
