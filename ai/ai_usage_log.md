@@ -88,3 +88,11 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Nature of Contribution**: Edit. NAF wrote "TAPR-OHW"; recorded as the license's actual name, the TAPR Open Hardware License (OHL).
 - **Human Review Status**: Pending review
 - **Git Hash**: 9f05fb7
+
+## [2026-09-01 12:32 UTC]
+- **Tool**: Claude (Anthropic), claude-fable-5
+- **Session Purpose**: Make the project more attractive to students, per NAF's selections from the assistant's suggestions: a tiered success ladder capping required scope at a normal capstone, a career-framing paragraph, and NAF's directive to note that grant funding makes resources available beyond what capstone projects normally get.
+- **Sections/Files Affected**: `docs/project_description.md` (new "Success tiers" subsection in section 5 with threshold/objective/stretch tiers; career paragraph in section 8; grant-funded lead-in to section 10); published artifact page mirrored; `ai/ai_usage_log.md`.
+- **Nature of Contribution**: Draft. Tier contents map to existing requirements only (threshold = R1–R6 at prototype level, objective adds R7–R9, stretch = R10 qualification); no new technical claims or numbers introduced.
+- **Human Review Status**: Pending review
+- **Git Hash**: [fill in after committing]

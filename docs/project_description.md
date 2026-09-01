@@ -102,6 +102,16 @@ These are the sponsor's initial targets. Refining them into a complete, testable
 
 **On R10.** Do not guess these numbers. Each station is a different environment, and hardware built to these numbers will actually be installed there. **Ask Dr. Frissell for the governing values**; as Institutional PI for the Scranton subaward on OPP-2332427 he is the route to the OPP project team and to station support documentation. Where a value is unavailable in semester 1, record the gap explicitly in the requirements specification and mark what depends on it.
 
+### Success tiers
+
+The requirements above define the full system. To keep the required scope honest, the sponsor defines three success tiers. The two-semester plan targets the objective tier; the threshold tier alone is a complete, successful capstone.
+
+- **Threshold (a successful capstone).** A bench-scale dual-channel system: prototype orthogonal elements, a working frequency translator, coherent two-channel capture through a single RX-888 with a stable measured inter-channel phase, a documented calibration procedure, and software combining with commanded weights demonstrated on bench signals (R1–R6 at prototype level).
+- **Objective (the project goal).** The threshold system installed at the field site and demonstrated on the air: pattern rotation, a null of at least 15 dB on a transmitter of known bearing, bearing estimates compared with great-circle values, the 72-hour soak under SigMonD, and the open-source release (adds R7–R9).
+- **Stretch (beyond expectations).** Hardware qualified against the Antarctic requirements of R10, with a verification matrix showing the evidence for each governing value, and a design package a HamSCI volunteer or station engineer can build from without contacting the team.
+
+Everything above the threshold is upside. Because the project is grant funded, significant resources are available to help the team reach the upper tiers, beyond what is normally available to capstone projects (section 10).
+
 ## 6. Two-Semester Plan
 
 ### Semester 1: Requirements, Design, and Prototyping
@@ -141,6 +151,8 @@ This project spans the full arc of a real instrument development effort inside a
 - **Systems engineering:** requirements definition, trade studies, design reviews, integration, verification against a specification;
 - **Professional practice:** open-source collaboration with an international volunteer engineering community, and the chance to see your hardware design replicated at stations around the world. The team will present its work at the 2027 HamSCI Workshop, hosted at the University of Scranton (deliverable 8), and strong results are candidates for publication in venues such as *QST*.
 
+This is also a deliberate career investment. The stack the project exercises (coherent receiver front ends, frequency planning, beamforming and array calibration, embedded Linux DSP) is the skill set that satellite communications, radar, cellular infrastructure, and software-defined radio employers interview for. A capstone that put working hardware in the field, with public design files, is a concrete answer to the interview question every new graduate faces: tell me about something you built.
+
 An amateur radio license is helpful and the club (W3USR) will happily get you licensed, but the project is receive-only, so a license is optional.
 
 ## 9. Team Roles (2–3 students)
@@ -150,6 +162,8 @@ An amateur radio license is helpful and the club (W3USR) will happily get you li
 - **Systems and test lead (EE or CE):** requirements, RF budget, test planning, calibration campaign, field measurements, documentation. In a two-person team, these duties are shared across the other two roles.
 
 ## 10. Resources Provided
+
+This project is grant funded. Significant resources are available to help students, beyond what is normally available to capstone projects:
 
 - A complete PSWS HF Receiver station (RX-888 MKII SDR, GPSDO, TS1 TimeSync, Linux mini-PC) and a field test site.
 - University RF laboratory test equipment (VNA, spectrum analyzer, signal generators).
