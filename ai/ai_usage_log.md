@@ -47,7 +47,7 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
   - **R1 through R9 keep their numbers.** The requirement was appended as R10 rather than inserted, so no existing reference to an R-number changes meaning. R8 (outdoor-rated, 72 h unattended) is left intact as the baseline case, and R10 states that it extends R8.
 - **Git Hash**: 8544065
 
-## [2026-09-01 01:40 UTC]
+## [2026-09-01 01:34 UTC]
 - **Tool**: Claude (Anthropic), claude-opus-5[1m]
 - **Session Purpose**: Resolve the open question from the previous entry: R10 sent the team to "the OPP-2332427 project team" with no name attached, which a capstone team would stall on. NAF: *"Just have them point to me. I'm the Institutional PI for the Scranton subaward to NJIT on OPP-2332427."*
 - **Sections/Files Affected**: `docs/project_description.md` (section 3 deployment-target item, R10, and the note under it, all now naming Dr. Frissell); `CLAUDE.md` (new line recording NAF's role on OPP-2332427); `ai/ai_usage_log.md`.
@@ -55,4 +55,4 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Human Review Status**: Reviewed. NAF stated his role and directed the pointer.
 - **Verification**: The previous entry declined to assert NAF's relationship to OPP-2332427, because the NSF award record he supplied names NJIT as recipient with Hyomin Kim as PI and lists no one from Scranton. That gap is now filled by NAF's own statement of his role, and the text distinguishes the two facts: NJIT holds the award, and Scranton holds a subaward on which NAF is Institutional PI. Nothing in the award record is contradicted, since a subaward would not appear on the prime award's public record.
 - **Note**: this makes the project sponsor and the requirements source the same person, which is worth stating plainly to students who would otherwise assume an external gatekeeper stands between them and the values they need for R10.
-- **Git Hash**: [to be added after commit]
+- **Git Hash**: 587fd00
