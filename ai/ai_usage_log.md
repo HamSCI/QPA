@@ -87,4 +87,4 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Sections/Files Affected**: `docs/project_description.md` (R9 names the licenses; Claude Code accounts added to Resources Provided with the AI-disclosure expectation); `.claude/rules/ai-governance.md` (student Claude Code accounts noted in project-specific expectations); `CLAUDE.md` (Licensing and Student AI use lines); published artifact page mirrored; `ai/ai_usage_log.md`.
 - **Nature of Contribution**: Edit. NAF wrote "TAPR-OHW"; recorded as the license's actual name, the TAPR Open Hardware License (OHL).
 - **Human Review Status**: Pending review
-- **Git Hash**: [fill in after committing]
+- **Git Hash**: 9f05fb7
