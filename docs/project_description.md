@@ -4,7 +4,7 @@
 
 | | |
 |---|---|
-| **Sponsor / Mentor** | Dr. Nathaniel A. Frissell, W2NAF, Department of Physics and Engineering, The University of Scranton (nathaniel.frissell@scranton.edu) |
+| **Project advisor** | Dr. Nathaniel A. Frissell, W2NAF, Department of Physics and Engineering, The University of Scranton (nathaniel.frissell@scranton.edu) |
 | **Additional mentors** | HamSCI volunteer engineering community; The University of Scranton Amateur Radio Club (W3USR) |
 | **Team size** | 2–3 students (EE and/or CE) |
 | **Duration** | Two semesters (Fall 2026 – Spring 2027) |
@@ -18,7 +18,7 @@ The Ham Radio Science Citizen Investigation (HamSCI, [hamsci.org](https://hamsci
 
 The flagship instrument of this network is the **PSWS HF Receiver**: an RX-888 MKII 16-bit direct-sampling software-defined radio (SDR) that digitizes the entire high-frequency spectrum (0.1–60 MHz usable) in a single channel and streams it over USB 3 to a low-cost Linux mini-computer. A GPS-disciplined oscillator (GPSDO) gives the system part-per-trillion frequency stability, and a Turn Island Systems TS1 TimeSync injector provides timing accuracy better than ±1 µs. The **ka9q-radio** software package by Phil Karn, KA9Q, uses a fast-convolution architecture to carve this wideband stream into hundreds of simultaneous, arbitrary-bandwidth "slice" receivers on a conventional CPU. HamSCI's **SigMonD** (Signal Monitor Daemon, [github.com/HamSCI/sigmond](https://github.com/HamSCI/sigmond)) coordinates the family of client applications that consume these slices: WSPR and FT8 spot decoding, WWV/WWVH/CHU Doppler and time-of-flight measurement, web SDR service, and more.
 
-The system is described in the August 2026 issue of *QST* ("The HamSCI Personal Space Weather Station HF Receiver," pp. 30–33), available from the project sponsor.
+The system is described in the August 2026 issue of *QST* ("The HamSCI Personal Space Weather Station HF Receiver," pp. 30–33), available from the project advisor.
 
 ## 2. The Gap This Project Fills
 
@@ -28,7 +28,7 @@ Today, every PSWS HF Receiver listens through **one antenna**, typically an omni
 - **Interference rejection**: steering a pattern null onto a local noise source or an interfering station, improving every downstream measurement;
 - **Diversity reception** and pattern selection for weak-signal work in contesting, DXing, and the WSPR/FT8 monitoring that feeds HamSCI science.
 
-The classic solution, dating to the Watson-Watt direction finders of the 1920s, is a pair of orthogonal antenna elements whose outputs are combined with controlled amplitude and phase. What is new here is the platform: the PSWS HF Receiver already digitizes 60 MHz of spectrum coherently on a single ADC, and its primary science band occupies only the bottom half. **The top 30 MHz of the digitizer's passband is available real estate.** If a second antenna's 0.1–30 MHz output is translated up into 30–60 MHz and combined onto the receiver's single coaxial input, the existing hardware becomes a two-channel coherent receiver at almost no additional cost, and pattern steering becomes a pure software problem.
+The classic solution, dating to the Watson-Watt direction finders of the 1920s, is a pair of orthogonal antenna elements whose outputs are combined with controlled amplitude and phase. What is new here is the platform: the PSWS HF Receiver already digitizes 60 MHz of spectrum coherently on a single ADC, and its primary science band occupies only the bottom half. **The top 30 MHz of the digitizer's passband is largely unused real estate.** Occupying it costs the station whatever it could otherwise observe between 30 and 60 MHz: VHF low-band land mobile, the 6 m amateur band, and TV channel 2. For a network whose science lives below 30 MHz, that is a favorable trade. If a second antenna's 0.1–30 MHz output is translated up into 30–60 MHz and combined onto the receiver's single coaxial input, the existing hardware becomes a two-channel coherent receiver at almost no additional cost, and pattern steering becomes a pure software problem.
 
 ## 3. Project Objective
 
@@ -39,7 +39,7 @@ At the end of the project, a visitor to the demonstration should be able to watc
 **Where this hardware goes.** The array has two deployment targets, and the design must serve both.
 
 1. **DASI2 amateur installations.** Volunteer-hosted PSWS sites, installed and maintained by the operator. This is the high-volume case, and it sets the cost, replicability, and ease-of-assembly targets.
-2. **The U.S. Antarctic stations**: Amundsen-Scott South Pole (SPA), McMurdo (MCM), and Palmer (PLM), supporting NSF OPP-2332427, *Collaborative Research: The Next Generation of U.S. Geospace Research Facilities at South Pole, McMurdo, and Palmer Stations in Antarctica* (September 2024 to August 2029). This is the low-volume, high-consequence case, and it sets the environmental and serviceability targets. Dr. Frissell is the Institutional PI for the University of Scranton subaward to the New Jersey Institute of Technology on that award, so the project sponsor is also the route to its requirements.
+2. **The U.S. Antarctic stations**: Amundsen-Scott South Pole (SPA), McMurdo (MCM), and Palmer (PLM), supporting NSF OPP-2332427, *Collaborative Research: The Next Generation of U.S. Geospace Research Facilities at South Pole, McMurdo, and Palmer Stations in Antarctica* (September 2024 to August 2029). This is the low-volume, high-consequence case, and it sets the environmental and serviceability targets. Dr. Frissell is the Institutional PI for the University of Scranton subaward to the New Jersey Institute of Technology on that award, so the project advisor is also the route to its requirements.
 
 The second target is the harder constraint and is easy to design past accidentally. A unit that a ham can re-tension on a Saturday afternoon may be unserviceable at a station where the crew is small, the season is short, and a replacement part is a year away. Treat the Antarctic case as a design input from semester 1, carried through every trade study.
 
@@ -48,29 +48,29 @@ The second target is the harder constraint and is easy to design past accidental
 ```
  Element 1 (e.g., N–S)          Element 2 (e.g., E–W, orthogonal)
       │                               │
- ┌────▼─────┐                    ┌────▼─────┐
+ ┌────▼──────┐                   ┌────▼──────┐
  │  Active   │                   │  Active   │
  │ antenna + │                   │ antenna + │
  │ amplifier │                   │ amplifier │
- └────┬─────┘                    └────┬─────┘
+ └────┬──────┘                   └────┬──────┘
       │ 0.1–30 MHz                    │ 0.1–30 MHz
- ┌────▼─────┐                    ┌────▼──────────┐
+ ┌────▼──────┐                   ┌────▼──────────┐
  │ Low-pass  │                   │  Frequency    │   LO locked to
  │  filter   │                   │  translator   │◄── station GPSDO
  │ (≤30 MHz) │                   │ (→ 30–60 MHz) │   reference
- └────┬─────┘                    └────┬──────────┘
+ └────┬──────┘                   └────┬──────────┘
       │                               │ 30–60 MHz (band-pass filtered)
       └────────────┬──────────────────┘
-              ┌────▼─────┐
+              ┌────▼──────┐
               │ Combiner/ │  single coax, DC power via bias tee
               │ diplexer  │
-              └────┬─────┘
+              └────┬──────┘
               ┌────▼──────────────┐
               │ PSWS HF Receiver  │  RX-888 MKII: one ADC digitizes
               │ (existing, as-is) │  both channels coherently
               └────┬──────────────┘
               ┌────▼──────────────┐
-              │ ka9q-radio        │  paired slices at f and f + f_LO
+              │ ka9q-radio        │  paired slices: f and its translated image
               ├───────────────────┤
               │ SigMonD steering  │  calibration + complex weights:
               │ client (new)      │  y = w₁·x₁ + w₂·x₂
@@ -85,12 +85,12 @@ The second target is the harder constraint and is easy to design past accidental
 
 ## 5. Draft Technical Requirements
 
-These are the sponsor's initial targets. Refining them into a complete, testable requirements specification, with each value justified by analysis, is the team's first deliverable.
+These are the advisor's initial targets. Refining them into a complete, testable requirements specification, with each value justified by analysis, is the team's first deliverable.
 
 | # | Requirement (initial target) |
 |---|---|
 | R1 | Two orthogonally oriented active receive elements covering 0.1–30 MHz (threshold: 1.8–30 MHz amateur/science bands) |
-| R2 | Channel B frequency translator moves 0.1–30 MHz into the 30–60 MHz Nyquist region; LO phase-locked to the station GPSDO reference |
+| R2 | Channel B frequency translator moves 0.1–30 MHz into the upper half of the digitizer's passband (30–60 MHz); LO phase-locked to the station GPSDO reference |
 | R3 | Image, LO leakage, and alias products suppressed sufficiently that they do not degrade either channel's science use (team to derive dB requirements from the RX-888's dynamic range) |
 | R4 | Single coaxial feed into the unmodified PSWS HF Receiver RF input; front-end electronics powered over the feedline via bias tee |
 | R5 | Inter-channel amplitude and phase calibrated across the band; post-calibration stability sufficient for pattern steering (initial target: ~1 dB / a few degrees over hours and normal outdoor temperature swings) |
@@ -104,7 +104,7 @@ These are the sponsor's initial targets. Refining them into a complete, testable
 
 ### Success tiers
 
-The requirements above define the full system. To keep the required scope honest, the sponsor defines three success tiers. The two-semester plan targets the objective tier; the threshold tier alone is a complete, successful capstone.
+The requirements above define the full system. To keep the required scope honest, the advisor defines three success tiers. The two-semester plan targets the objective tier; the threshold tier alone is a complete, successful capstone.
 
 - **Threshold (a successful capstone).** A bench-scale dual-channel system: prototype orthogonal elements, a working frequency translator, coherent two-channel capture through a single RX-888 with a stable measured inter-channel phase, a documented calibration procedure, and software combining with commanded weights demonstrated on bench signals (R1–R6 at prototype level).
 - **Objective (the project goal).** The threshold system installed at the field site and demonstrated on the air: pattern rotation, a null of at least 15 dB on a transmitter of known bearing, bearing estimates compared with great-circle values, the 72-hour soak under SigMonD, and the open-source release (adds R7–R9).
@@ -115,8 +115,8 @@ Everything above the threshold is upside. Because the project is grant funded, s
 ## 6. Two-Semester Plan
 
 ### Semester 1: Requirements, Design, and Prototyping
-- Requirements review with the sponsor and HamSCI mentors; finalize the specification.
-- Trade studies: antenna element type, LO frequency plan (high-side vs. low-side injection, guard bands, spectral inversion handling), mixer and filter topology, combiner design, calibration method.
+- Requirements review with the advisor and HamSCI mentors; finalize the specification.
+- Trade studies: antenna element type, array geometry and element spacing, LO frequency plan (high-side vs. low-side injection, guard bands, spectral inversion handling), mixer and filter topology, combiner design, calibration method.
 - Analysis and simulation: antenna modeling, full RF cascade budget (gain, noise figure, intercept points, dynamic range against the 16-bit ADC).
 - Breadboard prototypes: active element front end and frequency translator; bench demonstration of two-channel coherent capture through a single RX-888.
 - Software architecture prototype: paired-slice acquisition and complex-weight combining on bench signals.
@@ -130,6 +130,8 @@ Everything above the threshold is upside. Because the project is grant funded, s
 - 72-hour soak test under SigMonD service management.
 - Present the project at the [2027 HamSCI Workshop](https://hamsci.org/hamsci2027), April 17–18, 2027, at the University of Scranton.
 - **Milestones:** integration readiness review, final demonstration, HamSCI Workshop presentation (April 17–18), final report and poster, open-source release to the HamSCI GitHub organization.
+
+**The workshop sets the schedule.** The HamSCI Workshop falls in mid-April, ahead of the end of the spring semester, so the team needs a working demonstration and presentable results about a month before the course's own final deadline. Plan semester 2 backward from April 17.
 
 ## 7. Deliverables
 
@@ -169,14 +171,14 @@ This project is grant funded. Significant resources are available to help studen
 
 - A complete PSWS HF Receiver station (RX-888 MKII SDR, GPSDO, TS1 TimeSync, Linux mini-PC) and a field test site.
 - University RF laboratory test equipment (VNA, spectrum analyzer, signal generators).
-- Component and fabrication budget through the sponsor. [Amount to be confirmed.]
-- Mentorship from the sponsor and from HamSCI/TAPR volunteer engineers who designed the current PSWS hardware and software.
+- Component and fabrication budget through the advisor's grant funding. [Amount to be confirmed.]
+- Mentorship from the advisor and from HamSCI/TAPR volunteer engineers who designed the current PSWS hardware and software.
 - The open-source ka9q-radio and SigMonD codebases and their developer communities.
 - Claude Code accounts for each team member, for use in design analysis, software development, and documentation. AI use must follow University of Scranton academic integrity policy and the course instructor's rules, including disclosure of AI assistance in design reports.
 
 ## 11. References
 
-1. Frissell, N. A. (2026), "The HamSCI Personal Space Weather Station HF Receiver," *QST*, August 2026, pp. 30–33. (Copy available from the sponsor.)
+1. Frissell, N. A. (2026), "The HamSCI Personal Space Weather Station HF Receiver," *QST*, August 2026, pp. 30–33. (Copy available from the project advisor.)
 2. HamSCI Personal Space Weather Station: https://hamsci.org/psws and https://www.psws.hamsci.org
 3. SigMonD, the HamSCI signal monitor daemon: https://github.com/HamSCI/sigmond
 4. ka9q-radio, by Phil Karn, KA9Q: https://github.com/ka9q/ka9q-radio
