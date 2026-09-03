@@ -148,4 +148,4 @@ Required per University of Scranton AI Policy, HamSCI Generative AI Use Agreemen
 - **Corrections made this session**: the note's first draft restated the R5/R7 null-depth arithmetic that Q3 of `notes/2026-09-01_design_review_questions.md` already established on 2026-09-01, and the earlier note is the better of the two because it carries the mutual-coupling floor at −20 to −30 dB. Trimmed to a cross-reference before committing (W10).
 - **Unverified, carried as a bracketed placeholder (W13)**: the TAPR four-channel receiver's designer, project name, status, and specifications. Section 9 reads "[Design in progress; specifications to be confirmed with the advisor.]" and the note says to confirm with NAF before citing it outside the project.
 - **Not done this session**: the published student-facing artifact page (claude.ai/code/artifact/5f944165-223f-40b5-bf79-35c9e6f0760b) was **not** synced, so it is now stale by the whole of section 9 and the section renumbering.
-- **Git Hash**: [to be added]
+- **Git Hash**: f115309
