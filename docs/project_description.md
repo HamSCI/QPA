@@ -115,7 +115,7 @@ The requirements above define the full system. To keep the required scope honest
 - **Objective (the project goal).** The threshold system installed at the field site and demonstrated on the air: pattern rotation, a null of at least 15 dB on a transmitter of known bearing, bearing estimates compared with great-circle values, the 72-hour soak under SigMonD, and the open-source release (adds R7–R9, with R11 in force once the array goes outdoors).
 - **Stretch (beyond expectations).** Hardware qualified against the Antarctic requirements of R10, with a verification matrix showing the evidence for each governing value, and a design package a HamSCI volunteer or station engineer can build from without contacting the team.
 
-Everything above the threshold is upside. Because the project is grant funded, significant resources are available to help the team reach the upper tiers, beyond what is normally available to capstone projects (section 10).
+Everything above the threshold is upside. Because the project is grant funded, significant resources are available to help the team reach the upper tiers, beyond what is normally available to capstone projects (section 11).
 
 ## 6. Two-Semester Plan
 
@@ -162,7 +162,45 @@ This is also a deliberate career investment. The stack the project exercises (co
 
 An amateur radio license is helpful and the club (W3USR) will happily get you licensed, but the project is receive-only, so a license is optional.
 
-## 9. Team Roles (2–3 students)
+## 9. Where This Leads
+
+QPA is deliberately the first rung of a ladder, and the ladder is worth seeing from the start, because it changes a few design choices this year's team should make in semester 1.
+
+**The limit of two elements.** Two co-located orthogonal elements produce a power pattern that is always symmetric under a 180° rotation, for every possible choice of complex weights. Any weighted sum of the two azimuth patterns cos φ and sin φ reduces to a constant plus a single cos(2φ) term, so the result is two broad lobes 180° apart with two nulls exactly midway between them. The relative phase between channels therefore acts as a null-depth control, trading depth against an omnidirectional response. Placing a null on any bearing works, which is what R7 asks for, and pointing a single unambiguous lobe takes a third channel. Crossed loops also suffer a polarization error on high-angle skywave, familiar as the "night effect" in classical direction finding, and correcting it requires a direct measurement of the incident polarization.
+
+**What this project establishes is reusable.** The frequency translation into 30–60 MHz is a one-time exploit of a vacancy in this particular receiver's passband, and it does not extend to a third channel. Three other results carry forward to every later scheme, and they are the reason the project matters beyond its own demonstration:
+
+1. **Inter-channel calibration** (R5): measuring a complex gain difference across the band and holding it stable over temperature. This is the hardest problem in any coherent array, and its difficulty is independent of channel count.
+2. **The combining client's architecture.** Written over an N-channel data model, `y = Σ wₖ xₖ` supports everything below. Written for exactly two channels, it gets rewritten.
+3. **The channel-estimate observable** h₂/h₁, which drives steering, direction finding, and the calibration check from one estimator.
+
+The two-element demonstration is the proof that those three work. They are the durable deliverable.
+
+**A four-channel receiver is coming.** A TAPR member is developing a coherent receiver with four channels, each covering 60 MHz. [Design in progress; specifications to be confirmed with the advisor.] That instrument removes both compromises QPA works around. Every channel would cover 0.1–60 MHz natively, so the sacrifice of 30–60 MHz described in section 2 disappears and sporadic E, meteor scatter, and 6 m science return. Four coherent channels at the antenna also change what is physically measurable:
+
+| Configuration | What it adds |
+|---|---|
+| Two crossed loops plus an omnidirectional sense element | Resolves the 180° ambiguity. A cardioid has one lobe and one null. |
+| Three orthogonal loops plus an electric whip | Measures the full magnetic field vector plus one electric component, so polarization becomes a measured quantity and elevation angle becomes observable. |
+| Four elements with physical separation | A real aperture, with resolution improving toward the top of the band. |
+| Any four-channel set, processed jointly | Superresolution direction finding (MUSIC, ESPRIT), which can separate up to three simultaneous arrivals. |
+
+Elevation angle is the prize. A beacon at a known great-circle distance, observed with a measured arrival elevation, yields an ionospheric reflection height under a simple hop model. That is passive oblique sounding from a station that costs a small fraction of an ionosonde. Separating the ordinary and extraordinary magnetoionic modes, and separating one-hop from two-hop arrivals, would remove ambiguities that currently limit the network's Doppler and time-of-flight measurements.
+
+**Candidate follow-on capstone projects.** Nothing below is committed. Each depends on funding, on student interest, and on what this year's team delivers.
+
+| Project | Focus | Capability added |
+|---|---|---|
+| QPA (this project) | Two elements on one RX-888 | Calibration, steering client, a 15 dB null on a known bearing |
+| Follow-on A | A third coherent channel and a sense element | Unambiguous bearings, and the first bearing cross-fix between two PSWS stations |
+| Follow-on B | A vector sensor on the four-channel receiver | Elevation angle, polarization, mode separation, superresolution |
+| Follow-on C | Network-scale direction finding | Distributed bearing products in the shared database, and Antarctic operations |
+
+One rung needs no antenna development at all. Two stations, each reporting an ambiguous bearing line, produce an unambiguous fix by intersection. A distributed network resolves at the network level what a single two-element station cannot resolve locally, and QPA is its prerequisite.
+
+The NSF award supporting the Antarctic deployment (OPP-2332427) runs through August 2029, so a multi-year sequence of capstone teams fits inside it, each inheriting a calibrated and documented system and adding one capability. Three decisions therefore cost almost nothing this year and repay the effort many times over: keep the client's data model general in the number of channels, write the calibration procedure for N channels and execute it for two, and log bearing products with their 180° ambiguity represented explicitly so a later cross-fix can consume them.
+
+## 10. Team Roles (2–3 students)
 
 - **RF/analog hardware lead (EE):** antennas, amplifiers, translator, filters, combiner, calibration hardware.
 - **Software/DSP lead (CE or EE):** ka9q-radio/SigMonD integration, combining and steering algorithms, calibration software, demonstration interface.
@@ -170,7 +208,7 @@ An amateur radio license is helpful and the club (W3USR) will happily get you li
 
 **Expanding the team.** Capstone students are expected to carry the majority of the project work and its management. Within that, the team is encouraged to expand as needed and appropriate: members of the TAPR/HamSCI community, who have very significant industry and scientific experience, and underclassmen.
 
-## 10. Resources Provided
+## 11. Resources Provided
 
 This project is grant funded. Significant resources are available to help students, beyond what is normally available to capstone projects:
 
@@ -181,7 +219,7 @@ This project is grant funded. Significant resources are available to help studen
 - The open-source ka9q-radio and SigMonD codebases and their developer communities.
 - Claude Code accounts for each team member, for use in design analysis, software development, and documentation. AI use must follow University of Scranton academic integrity policy and the course instructor's rules, including disclosure of AI assistance in design reports.
 
-## 11. References
+## 12. References
 
 1. Frissell, N. A. (2026), "The HamSCI Personal Space Weather Station HF Receiver," *QST*, August 2026, pp. 30–33. (Copy available from the project advisor.)
 2. HamSCI Personal Space Weather Station: https://hamsci.org/psws and https://www.psws.hamsci.org
